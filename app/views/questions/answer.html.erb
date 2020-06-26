@@ -1,0 +1,18 @@
+<h1>answer</h1>
+  <blockquote>
+  <p>
+    <% if @question.blank? %>
+      😶
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+</blockquote>
+<a href="/">Back to home</a>
+<%= link_to "back to question", toto_path %>
